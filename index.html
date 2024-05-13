@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: rgb(226, 147, 44);
+            text-align: center;
+            padding: 50px;
+        }
+        .navbar{
+            display: flex;
+            background-color: black;
+            justify-content: space-around;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .article{
+            display: flex;
+            background-color:blue;
+        }
+        .A1{
+            flex: 40%;
+            padding: 10px;
+        }
+        .A2{
+            background-color: brown;
+            flex: 60%;     
+            padding: 10px;   
+}
+
+.img{
+    width: 100%;
+    padding: 10px;
+}
+        
+        .footer{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        @media screen and (max-width: 700px){
+            .navbar, .article{
+                flex-direction: column;
+            }
+        }
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <h2>My Website</h2>
+    </div>
+<div class="navbar">
+    <a href="">Link</a>
+    <a href="">Link</a>
+    <a href="">Link</a>
+    <a href="">Link</a>
+</div>
+<div class="article"> 
+    <div class="A1"> 
+        <h3>About Me</h3>
+        <h4>Photo of me:</h4>
+        <div class="img"> <img src="../Resback.jpg" alt="" height="200px"></div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..
+        </p>
+        <h3>More Text
+        </h3>
+        <p>Lorem ipsum dolor sit ame.
+        </p>
+        <div class="img"> <img src="./Resback.jpg" alt="" height="60px"></div>
+        <div class="img"> <img src="./Resback.jpg" alt="" height="60px"></div>
+        <div class="img"> <img src="./Resback.jpg" alt="" height="60px"></div>
+    </div>
+<div class="A2">
+    <h3>TITLE HEADING
+    </h3>
+    <h4>Title description, Dec 7, 2017
+    </h4>
+    <div class="img"><img src="./Resback.jpg" alt="" height="200px"></div>
+    <p>Some text..
+    </p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+    </p>
+    <h3>TITLE HEADING
+    </h3>
+    <h4>Title description, Sep 2, 2017
+    </h4>
+    <div><img src="./Resback.jpg" alt="" height="200px"></div>
+    <p>Some text..
+    </p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+    </p>
+</div>
+</div>
+<div class="footer">Footer</div>
+</body>
+</html>
